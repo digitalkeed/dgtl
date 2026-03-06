@@ -1,0 +1,100 @@
+/* 100% replica - centered minimalist (from your HTML) */
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.subhead {
+  color: #888888;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 24px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.1s ease;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.navItem:hover {
+  color: #888888;
+}
+
+.navItem:focus-visible {
+  outline: 1px solid #888888;
+  outline-offset: 4px;
+}
+
+.socialGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.socialLink {
+  text-decoration: none;
+  color: #888888;
+  transition: color 0.1s ease;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  color: #000000;
+}
+
+.socialLink:focus-visible {
+  outline: 1px solid #888888;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+    font-size: 13px;
+  }
+}
