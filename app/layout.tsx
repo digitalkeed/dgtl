@@ -4,6 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Leart Raka",
   description: "I design things",
+  metadataBase: new URL("https://dgtl-five.vercel.app"),
+  openGraph: {
+    title: "Leart Raka",
+    description: "Minimalist / Anti Kitsch",
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leart Raka",
+    description: "Minimalist / Anti Kitsch",
+    images: ["/og.png"],
+  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml", media: "(prefers-color-scheme: light)" },
